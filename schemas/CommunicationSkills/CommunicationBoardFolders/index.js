@@ -24,7 +24,6 @@ export default {
             type: "array",
             of: [{ type: "image" }],
             title: 'Images'
-            // kk
         },
     ]
 }
