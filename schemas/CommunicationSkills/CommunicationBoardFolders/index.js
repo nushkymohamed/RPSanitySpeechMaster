@@ -4,14 +4,26 @@ export default {
     title: 'Communication Board Folders',
     fields: [
         {
-            name: 'name',
+            name: 'folder_name',
             type: 'string',
+            title: 'Folder Name'
+        },
+        {
+            name: 'homeImage',
+            type: 'image',
+            title: 'Home Image'
+        },
+        {
+            name: 'name',
+            type: "array",
+            of: [{ type: "string" }],
             title: 'Name'
         },
         {
             name: 'image',
-            type: 'image',
-            title: 'Image'
-        }
+            type: "array",
+            of: [{ type: "image" }],
+            title: 'Images'
+        },
     ]
 }

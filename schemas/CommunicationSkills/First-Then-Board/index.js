@@ -5,14 +5,22 @@ export default {
     fields: [
         {
             name: 'tasks',
-            type: "array",
-            of: [{ type: "image" }],
+            type: "reference",
+            to: [
+                {
+                    type: "first-then-Board-Tasks",
+                },
+            ],
             title: 'Tasks'
         },
         {
             name: 'rewards',
-            type: "array",
-            of: [{ type: "image" }],
+            type: "reference",
+            to: [
+                {
+                    type: "first-then-Board-Rewards",
+                },
+            ],
             title: 'Rewards'
         }
 
